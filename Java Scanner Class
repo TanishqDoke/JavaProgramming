@@ -4,13 +4,19 @@ import java.util.Scanner;
 public class ScannerClass {
     public static void  main(String[] args)
     {
-        Scanner sc= new Scanner(System.in);
+        Scanner sc= new Scanner(System.in);     //Here we make a instance of the class.  We make a new object and use it as we like it.
         System.out.println("Enter the 1st number : ");
-        int a = sc.nextInt();
+       // int a = sc.nextInt();                           //Using the object sc  by calling its next int method.
+       
+       float a= sc.nextFloat();
+       
         System.out.println("Enter the 2nd number : ");
-        int b = sc.nextInt();
+        //int b = sc.nextInt();
+        float b =sc.nextFloat();
+        
 
-        int sum = a+b;
+        //int sum = a+b;
+        float sum =a+b;
 
         System.out.println("Sum of the numbers is :"+sum);
 
