@@ -1,0 +1,8 @@
+To check the validity of the given input by user we use the sc.hasNextInt() function of the scanner class.
+
+int a=sc.nextInt();			//Input 
+boolean b1=sc.hasNextInt();
+System.out.println(b1);		//Output
+
+Output: 	testCase1 : Input = 23.89 	Output = false
+			testCase2 : Input = 45		Output = true  
