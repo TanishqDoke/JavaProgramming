@@ -6,3 +6,9 @@ System.out.println(b1);		//Output
 
 Output: 	testCase1 : Input = 23.89 	Output = false
 			testCase2 : Input = 45		Output = true  
+			
+The sc.next function print the string which we have given as input, but it can only read one word not a whole sentence.
+	
+	String str= sc.next();	// If the input is "Hello JAVA" it will only read Hello and will print it as output.
+	System.out.println(str);
+	
