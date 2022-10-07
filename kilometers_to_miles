@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Kilometers_to_miles {
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter how many kilometers :");
+        double km=sc.nextFloat();
+
+        double miles= km * 0.62137;
+
+        System.out.println("The conversion from kilometers to miles is "+miles);
+    }
+}
