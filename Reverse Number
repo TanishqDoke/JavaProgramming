@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class reverse {
+    static void reverse(int n) {
+
+        ;
+        int cout = 0;
+
+        while (n != 0) {
+            int remainder = n % 10;
+
+            cout = cout * 10 + remainder;
+
+            n = n / 10;
+
+        }
+        System.out.println(cout);
+    }
+
+
+    public static void main(String[] args) {
+        reverse(12);
+        reverse(2134);
+        reverse(8867326);
+        reverse(6182908);
+        reverse(231);
+        reverse(987654321);
+
+    }
+}
