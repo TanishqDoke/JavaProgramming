@@ -7,11 +7,11 @@ public class reverse {
         int cout = 0;
 
         while (n != 0) {
-            int remainder = n % 10;
+            int remainder = n % 10;             // To get the remainder we use the modulus function.
 
-            cout = cout * 10 + remainder;
+            cout = cout * 10 + remainder;       // We store the reversed number in cout variable.
 
-            n = n / 10;
+            n = n / 10;                         // Remove the reversed digits from the original number.
 
         }
         System.out.println(cout);
