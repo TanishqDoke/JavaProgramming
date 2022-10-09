@@ -1,0 +1,36 @@
+public class Palindrome {
+    static void palindrome(int n) {
+        int cout = 0;
+
+        int temp=n;
+
+        while (n != 0) {
+            int remainder = n % 10;
+
+            cout = cout * 10 + remainder;
+
+            n = n / 10;
+
+        }
+        if (temp == cout)
+        {
+            System.out.println("The number  is a palindrome number");
+        }
+
+        else
+        {
+            System.out.println("The number  is not a palindrome number");
+        }
+    }
+
+
+    public static void main(String[] args) {
+        palindrome(12);
+        palindrome(1221);
+        palindrome(8867326);
+        palindrome(333333);
+        palindrome(231);
+        palindrome(12344321);
+
+    }
+}
