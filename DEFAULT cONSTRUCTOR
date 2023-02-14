@@ -1,0 +1,41 @@
+package Praactice_OOPS;
+
+public class fruit
+{
+    String colour,size;
+
+    fruit()
+    {
+       this.colour="Red";
+        this.size="Small";
+
+    }
+
+    public void colour()
+    {
+        System.out.println("My Colour is :"+colour);
+    }
+
+    public void size()
+    {
+        System.out.println("My size is "+size);
+    }
+
+    public static void main(String[] args) {
+
+        fruit banana = new fruit();
+        fruit mango = new fruit();
+        fruit apple= new fruit();
+
+        banana.size();
+        banana.colour();
+
+        mango.size();
+        mango.colour();
+
+        apple.size();
+        apple.colour();
+
+    }
+}
+
