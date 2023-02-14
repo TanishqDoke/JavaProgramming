@@ -1,0 +1,50 @@
+package Praactice_OOPS;
+public class fruit
+{
+    String colour,size;
+
+    fruit()
+    {
+       this.colour="Red";
+        this.size="Small";
+
+        System.out.println("I am the default constructor");
+
+    }
+
+    fruit(String colour){
+        System.out.println("I am the 1st Parameterized Constructor with one argument.");
+    }
+
+    fruit(String colour, String size){
+        System.out.println("I am the 1st Parameterized Constructor with two argument.");
+    }
+
+    public void colour()
+    {
+        System.out.println("My Colour is :"+colour);
+    }
+
+    public void size()
+    {
+        System.out.println("My size is "+size);
+    }
+
+    public static void main(String[] args) {
+
+        fruit banana = new fruit();
+        fruit mango = new fruit("Yellow");
+        fruit orange= new fruit("Orange","Medium");
+
+        banana.size();
+        banana.colour();
+
+        mango.size();
+        mango.colour();
+
+        orange.size();
+        orange.colour();
+
+    }
+}
+
