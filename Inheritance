@@ -1,0 +1,38 @@
+package Praactice_OOPS;
+
+class employee{
+
+
+    public void salary(float sal){
+        System.out.println("My Salary is :"+sal);
+    }
+
+    public void workHours(int wk){
+
+        System.out.println("I  work for "+wk+" hours per week.");
+
+    }
+
+}
+
+class manager extends employee{
+
+
+    public void projects(int proj){
+
+        System.out.println("I have completed "+proj+" projects in my career.");
+    }
+
+
+    public static void main(String[] args) {
+
+
+        manager emp1 = new manager();
+
+        emp1.salary(123212.23f);
+        emp1.workHours(56);
+        emp1.projects(400);
+    }
+
+}
+
