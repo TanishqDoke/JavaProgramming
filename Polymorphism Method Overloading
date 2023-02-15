@@ -1,0 +1,36 @@
+package Praactice_OOPS;
+
+class  Addition{
+
+    public int add(int a,int b){
+
+        return a+b;
+    }
+
+    public int add(int a,int b,int c){
+
+        return a+b+c;
+    }
+
+    public int add(int a,int b,int c,int d){
+
+        return a+b+c+d;
+    }
+
+    public static void main(String[] args) {
+
+        Addition calc=new Addition();
+int sum1,sum2,sum3;
+        sum1=calc.add(54,67);
+
+       sum2= calc.add(12,45,78,53);
+
+       sum3= calc.add(34,54,78);
+
+        System.out.println(sum1);
+        System.out.println(sum2);
+        System.out.println(sum3);
+    }
+
+
+}
