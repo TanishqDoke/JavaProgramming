@@ -1,0 +1,60 @@
+package Praactice_OOPS;
+
+
+import java.sql.SQLOutput;
+
+class  Dog{
+        static {
+            System.out.println("----------- Static Block -----------");
+            System.out.println("I am the Static block !!!!!");
+            System.out.println("I am executed befor the main method !!!!!!!");
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println("------------- Main method -------------");
+
+
+        }
+
+    public void sound() {
+
+        System.out.println("I am a dog I can Bark!!!");
+    }
+
+    public void legs() {
+
+        System.out.println("I have 4 Legs");
+    }
+
+}
+
+class  Cat extends Dog{
+
+    public void sound() {
+
+        System.out.println("I am a cat I can Meow");
+    }
+
+    public void legs() {
+
+        System.out.println("I have 4 Legs");
+    }
+
+
+    public static void main(String[] args) {
+
+        Cat kitten=new Cat();
+
+        kitten.sound();
+        kitten.legs();
+
+      Dog puppy=new Dog();
+
+      puppy.sound();
+      puppy.legs();
+
+    }
+
+
+}
+
