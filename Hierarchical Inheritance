@@ -1,0 +1,67 @@
+package Praactice_OOPS;
+
+class  LivingBeings{
+
+    void eat(){
+        System.out.println("We eat food for survival");
+    }
+
+    void breath(){
+        System.out.println("We breath in oxygen for survival");
+    }
+
+}
+
+class Human extends LivingBeings{
+
+    void think(){
+        System.out.println("We can think");
+    }
+
+    void legs(){
+        System.out.println("We have two legs");
+    }
+
+
+}
+
+class Animals extends LivingBeings{
+
+
+
+    void legs(){
+        System.out.println("We have four legs");
+    }
+
+    void think(){
+        System.out.println("We cannot think");
+    }
+
+}
+
+class TestAnimals extends Animals {
+
+    public static void main(String[] args) {
+
+        Animals cat=new Animals();
+
+        cat.legs();
+        cat.think();
+    }
+}
+
+class TestHumans extends Human {
+
+    public static void main(String[] args) {
+
+        Human baby1 = new Human();
+
+        baby1.legs();
+        baby1.think();
+    }
+}
+
+
+
+
+
