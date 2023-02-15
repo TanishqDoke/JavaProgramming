@@ -1,0 +1,26 @@
+package Praactice_OOPS;
+//Parent Class
+class Color{
+
+    String color="white";
+
+}
+
+
+
+//Child Class
+class Pen extends Color{
+    String color="black";
+    void printColor(){
+        System.out.println(color);
+        System.out.println(super.color);//Using super keyword we can access the data member or field of parent class.
+    }
+}
+
+
+class TestSuper{
+    public static void main(String args[]){
+        Pen p1=new Pen();
+        p1.printColor();
+    }
+}
