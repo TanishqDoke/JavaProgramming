@@ -1,0 +1,35 @@
+package Praactice_OOPS;
+
+class  Cat{
+        static {
+            System.out.println("----------- Static Block -----------");
+            System.out.println("I am the Static block !!!!!");
+            System.out.println("I am executed befor the main method !!!!!!!");
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println("------------- Main method -------------");
+        }
+
+    public static void sound() {
+
+        System.out.println("I am a cat I can Meow");
+    }
+
+    public static void legs() {
+
+        System.out.println("I have 4 Legs");
+    }
+
+
+    public static void main(String[] args) {
+
+        sound();            // We don't need to create object to call a static method.
+        legs();             // We can simply give the method name call it.
+
+
+    }
+
+
+}
+
