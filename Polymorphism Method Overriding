@@ -1,0 +1,45 @@
+package Praactice_OOPS;
+
+class  Dog{
+
+    public void sound() {
+
+        System.out.println("I am a dog I can Bark!!!");
+    }
+
+    public void legs() {
+
+        System.out.println("I have 4 Legs");
+    }
+
+}
+
+class  Cat extends Dog{
+
+    public void sound() {
+
+        System.out.println("I am a cat I can Meow");
+    }
+
+    public void legs() {
+
+        System.out.println("I have 4 Legs");
+    }
+
+
+    public static void main(String[] args) {
+
+        Cat kitten=new Cat();
+
+        kitten.sound();
+        kitten.legs();
+
+      Dog puppy=new Dog();
+
+      puppy.sound();
+      puppy.legs();
+
+    }
+
+
+}
